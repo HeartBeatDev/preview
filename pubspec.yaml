@@ -1,0 +1,56 @@
+name: Hercules
+description: A new Flutter application.
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.14.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # BLoC
+  flutter_bloc: ^7.0.1
+
+  # Firebase
+  firebase_core: ^1.7.0
+  firebase_auth: ^3.1.2
+  google_sign_in: ^5.1.1
+  flutter_facebook_auth: ^3.5.2
+  cloud_firestore: ^2.5.3
+  sign_in_with_apple: ^3.0.0
+  crypto: ^3.0.1
+
+  #DB
+  sqflite: ^2.0.0+3
+
+  # Tools
+  flutter_svg: ^0.22.0
+  easy_localization: ^3.0.0
+  fluttertoast: ^8.0.8
+  json_annotation: ^4.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Tools
+  json_serializable: ^4.1.4
+  build_runner:
+
+flutter:
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - assets/translations/
+    - assets/images/
+
+  # Fonts
+  fonts:
+    - family: Comfortaa
+      fonts:
+        - asset: assets/fonts/comfortaa-bold.ttf
+          weight: 700
